@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+lib/
+include/
+bin/
+laliga/
+scraper.log*
+pip-selfcheck.json
