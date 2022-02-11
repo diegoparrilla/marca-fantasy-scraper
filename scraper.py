@@ -87,7 +87,7 @@ def main(argv=None):
         csv_row += ',TARJETAS_AMARILLAS_PUNTOS,SEGUNDAS_AMARILLAS_PUNTOS,TARJETAS_ROJAS_PUNTOS,TIROS_A_PUERTA_PUNTOS'
         csv_row += ',REGATES_PUNTOS,BALONES_RECUPERADOS_PUNTOS,POSESIONES_PERDIDAS_PUNTOS,PUNTOS_MARCA_PUNTOS'
         csv_content.append(csv_row)
-        for index in range(0,999):
+        for index in range(0,1499):
             response = requests.get('%s/%s' % (players_endpoint,index))
             if response.status_code == 200:
                 payload = response.json()
